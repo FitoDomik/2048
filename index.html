@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра 2048</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>2048</h1>
+            <div class="score-container">
+                <div class="score-title">Счёт:</div>
+                <div id="score">0</div>
+            </div>
+            <div class="best-container">
+                <div class="best-title">Рекорд:</div>
+                <div id="best-score">0</div>
+            </div>
+        </div>
+        <div class="above-game">
+            <p class="game-intro">Соединяйте одинаковые числа и получите плитку <strong>2048!</strong></p>
+            <button id="new-game" class="restart-button">Новая игра</button>
+        </div>
+        <div class="game-container">
+            <div class="grid-container" id="grid-container">
+            </div>
+            <div class="game-message">
+                <p></p>
+                <div class="lower">
+                    <button id="retry" class="retry-button">Попробовать снова</button>
+                </div>
+            </div>
+        </div>
+        <p class="game-explanation">
+            <strong>Как играть:</strong> Используйте <strong>стрелки</strong> на клавиатуре или <strong>свайпы</strong> на мобильном устройстве для перемещения плиток. Когда две плитки с одинаковыми числами соприкасаются, они <strong>объединяются в одну!</strong>
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
